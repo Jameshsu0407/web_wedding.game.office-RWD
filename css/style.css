@@ -54,3 +54,14 @@ footer{
   line-height: 40px;
   background-color: #000;
 }
+
+/* 載具大於576以上隱藏內容 */
+@media (min-width: 576px) {
+  .card-text-content{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
