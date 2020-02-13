@@ -1,50 +1,43 @@
-* {
+*{
   padding: 0;
   margin: 0;
 }
 
-body {
+body{
   margin: 0;
   padding: 0;
   background: #ae8762 url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+
 }
 
-.start-btn {
-  -webkit-animation-name: start-btn;
-          animation-name: start-btn;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes start-btn {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
+.start-btn{
+  /* 動畫的關鍵影格名稱 */
+  animation-name: start-btn;
+  /* 動畫播放一次的秒數 */
+  animation-duration: .5s;
+  /* 畫轉變時的加速曲線 */
+  animation-timing-function: ease;
+  /* 延遲播放時間 */
+  animation-delay: 0s;
+  /* 動畫重複的次數 */
+  animation-iteration-count: infinite;
+  /* 動畫播完後會反向回撥 */
+  animation-direction: alternate;
 }
 
 @keyframes start-btn {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+  0%{
+      /* 動畫在0%時的尺寸比例 */
+      transform: scale(1,1);
   }
-  100% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
+  100%{
+      /* 動畫在100%時的尺寸比例，放大1.1倍 */
+      transform: scale(1.1,1.1);
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.game-content{
+  margin-top: 18rem;
+}
