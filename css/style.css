@@ -41,3 +41,10 @@ body{
 .game-content{
   margin-top: 18rem;
 }
+
+ul.game-rule{
+  /* 項目符號改為數字型 */
+  list-style: decimal;
+  /* 左邊內距 */
+  padding-left: 1.6rem;
+}
